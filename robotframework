@@ -1,0 +1,19 @@
+*** Settings ***
+
+Documentation  Basic Seach Functionality
+Library  SeleniumLibrary
+
+*** Variables ***
+
+
+*** Test Cases ***
+Verify basic seach functionality for google
+    [Documentation]  This test case verifies the basic search
+    [Tags]  Functional
+
+    Open Browser  https://www.google.com/  chrome
+    Input Text  /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input  robotframework
+    sleep 5
+    Close Browser
+
+*** Keywords ***
