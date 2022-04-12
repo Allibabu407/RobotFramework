@@ -7,6 +7,6 @@ which contains RobotFramework.
 1. RobotFramework
 2. Selenium2Library
 
-
-
+References:
+https://robotframework.org/Selenium2Library/Selenium2Library.html#Input%20Text
 
