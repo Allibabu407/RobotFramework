@@ -5,10 +5,11 @@ It will search for RobotFramework and list all the pages which contains RobotFra
 and it will print the links and take a snapshots as well.
 
 #Project contains Directories
-Results ---> This Directories mainly consists of reports and screenshots.
+Reports ---> This Directories mainly consists of reports.
 
-TestCases ---> This folder consists of all test cases related to the Automation test cases 
-will be named as Goolgesearch.robot
+TestCases ---> This folder consists of all test cases related to the test automation
+
+Screenshots ---> Screenshots are captured in this directory
 
 #External dependencies
 IntelliBot Plugin
@@ -18,3 +19,10 @@ robotframework-selenium2library
 Driver executable ---> Chrome driver is used for automation.
 
 References: robotframework.org/Selenium2Library
+
+
+# How to execute Test cases
+ robot -d reports .\TestCases\GoogleSearch.robot
+
+
+

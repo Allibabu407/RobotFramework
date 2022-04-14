@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220414 23:49:33.185" rpa="false" schemaversion="3">
+<suite id="s1" name="GoogleSearch" source="C:\Users\Administrator\Documents\GitHub\RobotFramework\TestCases\GoogleSearch.robot">
+<test id="s1-t1" name="Google search demo with an example" line="16">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220414 23:49:33.466" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20220414 23:49:33.451" endtime="20220414 23:49:36.428"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>${URL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220414 23:49:36.437" endtime="20220414 23:49:36.466"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220414 23:49:36.470" endtime="20220414 23:49:36.649"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${text}</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:36.655" level="INFO">Typing text 'Robot Framework' into text field 'xpath=//input[@name='q']'.</msg>
+<status status="PASS" starttime="20220414 23:49:36.654" endtime="20220414 23:49:36.833"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:36.836" level="INFO">Clicking element 'xpath=(//input[@name='btnK'])[1]'.</msg>
+<status status="PASS" starttime="20220414 23:49:36.835" endtime="20220414 23:49:38.985"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Robot</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220414 23:49:38.987" endtime="20220414 23:49:39.073"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=${EXECDIR}/Screenshots/selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 23:49:39.221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-1.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 23:49:39.075" endtime="20220414 23:49:39.221"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url1}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:39.222" level="INFO">Clicking link 'https://robotframework.org/'.</msg>
+<status status="PASS" starttime="20220414 23:49:39.221" endtime="20220414 23:49:41.112"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=${EXECDIR}/Screenshots/selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 23:49:41.263" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-2.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 23:49:41.112" endtime="20220414 23:49:41.263"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 23:49:41.264" endtime="20220414 23:49:41.541"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url2}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:41.542" level="INFO">Clicking link 'https://www.tutorialspoint.com/robot_framework/index.htm'.</msg>
+<status status="PASS" starttime="20220414 23:49:41.542" endtime="20220414 23:49:42.811"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=${EXECDIR}/Screenshots/selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 23:49:43.664" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-3.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 23:49:42.831" endtime="20220414 23:49:43.664"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 23:49:43.670" endtime="20220414 23:49:44.036"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url3}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:44.039" level="INFO">Clicking link 'https://github.com/robotframework/robotframework'.</msg>
+<status status="PASS" starttime="20220414 23:49:44.038" endtime="20220414 23:49:45.666"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=${EXECDIR}/Screenshots/selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 23:49:45.883" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-4.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 23:49:45.670" endtime="20220414 23:49:45.883"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 23:49:45.892" endtime="20220414 23:49:46.278"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url4}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 23:49:46.292" level="INFO">Clicking link 'https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics'.</msg>
+<status status="PASS" starttime="20220414 23:49:46.291" endtime="20220414 23:49:48.146"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=${EXECDIR}/Screenshots/selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 23:49:48.502" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/selenium-screenshot-5.png"&gt;&lt;img src="../Screenshots/selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 23:49:48.150" endtime="20220414 23:49:48.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220414 23:49:53.514" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220414 23:49:48.502" endtime="20220414 23:49:53.514"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220414 23:49:53.514" endtime="20220414 23:49:57.795"/>
+</kw>
+<doc>The user search 'Robot Framework'</doc>
+<status status="PASS" starttime="20220414 23:49:33.451" endtime="20220414 23:49:57.795"/>
+</test>
+<doc>This is a basic test to search robotframework in google and return urls</doc>
+<status status="PASS" starttime="20220414 23:49:33.185" endtime="20220414 23:49:57.795"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="GoogleSearch">GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
