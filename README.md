@@ -1,12 +1,20 @@
-# RobotFramework
-This is a demo project which contains a GoogleSearchExample.robot. This file will open the chrome browser
-and redirect to google.com page. It will search for RobotFramework and list all the pages 
-which contains RobotFramework.
+#RobotFramework
+This is a demo Project which contains a GoogleSearch.robot. 
+This file will open the Chrome browser and redirect to google.com page.
+It will search for RobotFramework and list all the pages which contains RobotFramework, 
+and it will print the links and take a snapshots as well.
 
-#Technologies/Libraries used
-1. RobotFramework
-2. Selenium2Library
+#Project contains Directories
+Results ---> This Directories mainly consists of reports and screenshots.
 
-References:
-https://robotframework.org/Selenium2Library/Selenium2Library.html#Input%20Text
+TestCases ---> This folder consists of all test cases related to the Automation test cases 
+will be named as Goolgesearch.robot
 
+#External dependencies
+IntelliBot Plugin
+robotframework
+robotframework-selenium2library
+
+Driver executable ---> Chrome driver is used for automation.
+
+References: robotframework.org/Selenium2Library

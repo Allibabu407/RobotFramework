@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220414 18:57:16.795" rpa="false" schemaversion="3">
+<suite id="s1" name="GoogleSearch" source="C:\Users\Dady\PycharmProjects\RobotFrameworkSelProject\TestCases\GoogleSearch.robot">
+<test id="s1-t1" name="Google search demo with an example" line="16">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220414 18:57:18.443" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20220414 18:57:18.442" endtime="20220414 18:57:24.413"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>${URL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220414 18:57:24.414" endtime="20220414 18:57:24.435"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220414 18:57:24.436" endtime="20220414 18:57:24.587"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${text}</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:24.590" level="INFO">Typing text 'Robot Framework' into text field 'xpath=//input[@name='q']'.</msg>
+<status status="PASS" starttime="20220414 18:57:24.588" endtime="20220414 18:57:24.857"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:24.860" level="INFO">Clicking element 'xpath=(//input[@value='Google Search'])[2]'.</msg>
+<status status="PASS" starttime="20220414 18:57:24.859" endtime="20220414 18:57:28.377"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Robot</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220414 18:57:28.378" endtime="20220414 18:57:28.425"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 18:57:28.609" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 18:57:28.425" endtime="20220414 18:57:28.609"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url1}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:28.610" level="INFO">Clicking link 'https://robotframework.org/'.</msg>
+<status status="PASS" starttime="20220414 18:57:28.610" endtime="20220414 18:57:36.734"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 18:57:36.931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 18:57:36.735" endtime="20220414 18:57:36.931"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 18:57:36.932" endtime="20220414 18:57:37.131"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url2}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:37.132" level="INFO">Clicking link 'https://www.tutorialspoint.com/robot_framework/index.htm'.</msg>
+<status status="PASS" starttime="20220414 18:57:37.132" endtime="20220414 18:57:40.405"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 18:57:40.785" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 18:57:40.406" endtime="20220414 18:57:40.785"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 18:57:40.786" endtime="20220414 18:57:41.167"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url3}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:41.168" level="INFO">Clicking link 'https://github.com/robotframework/robotframework'.</msg>
+<status status="PASS" starttime="20220414 18:57:41.167" endtime="20220414 18:57:44.073"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 18:57:44.324" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 18:57:44.075" endtime="20220414 18:57:44.324"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220414 18:57:44.325" endtime="20220414 18:57:44.604"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${url4}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220414 18:57:44.610" level="INFO">Clicking link 'https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics'.</msg>
+<status status="PASS" starttime="20220414 18:57:44.609" endtime="20220414 18:57:49.860"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220414 18:57:50.042" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 18:57:49.861" endtime="20220414 18:57:50.042"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220414 18:57:55.050" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220414 18:57:50.042" endtime="20220414 18:57:55.050"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220414 18:57:55.051" endtime="20220414 18:58:00.219"/>
+</kw>
+<doc>The user search 'Robot Framework'</doc>
+<status status="PASS" starttime="20220414 18:57:18.441" endtime="20220414 18:58:00.219"/>
+</test>
+<doc>This is a basic test</doc>
+<status status="PASS" starttime="20220414 18:57:16.830" endtime="20220414 18:58:00.223"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="GoogleSearch">GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -17,6 +17,7 @@ Google search demo with an example
     [Documentation]                                 The user search 'Robot Framework'
     open browser                                    ${URL}    ${browser}
     wait until page contains                        ${URL}
+    Maximize Browser Window
     input text                                      ${text}  Robot Framework
     click element                                   ${search_button}
     wait until page contains                        Robot
